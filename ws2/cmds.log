@@ -1,0 +1,12 @@
+
+  223  mkdir -p ~/cs131/ws2 // Creates a directory ws2 inside cs131
+  224  cd ~/cs131/ws2 Changes directory to ws2 inside cs131
+  225  echo $HOME Prints my home directory path
+  226  id Displays user identity information
+  228  ls /proc/ | grep mem Lits all files in proc and filters for names containing mem
+  229  head -5 /proc/meminfo Displays first 5 lines of /proc/cpuinfo
+  230  head -10 /proc/cpuinfo Displays first 10 lines of /proc/cpuinfo
+  231  tail -5 /proc/cpuinfo Displays last 5 lines of /proc/cpuinfo
+  232  cat /proc/cpuinfo Displays all contents of /proc/cpuinfo
+  233  script -c "history" ws2.txt Records output of the history command into ws2.txt
+  234  history >cmds.log Saves the command history to a file named cmds.log
