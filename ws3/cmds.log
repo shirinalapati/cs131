@@ -1,0 +1,17 @@
+sudo apt install python3-pip -y
+gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+
+head -n 10 2019-01-h1.csv // extracts the right data and finds which column represents pickup datetime and pickup location ID
+
+// Extracts rides from January 2, 2019
+grep "^2019-01-02" taxi_data.csv | cut -d ',' -f5 | sort | uniq -c | sort -nr | head -3 > ws3.txt
+echo "Top 3 pickup locations on January 2, 2019" >> ws3.txt
+
+// Extracts rides from January 10, 2019 using the same command
+grep "^2019-01-10" taxi_data.csv | cut -d ',' -f5 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+echo "Top 3 pickup locations on January 10, 2019" >> ws3.txt
+
+vim ws3.txt
+
+history > cmds.log
+vim cmds.log
