@@ -1,3 +1,63 @@
-Script started on 2025-02-07 04:35:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="91" LINES="50"]
+Home Directory Path:
+/home/salapati22 This is my home directory
 
-Script done on 2025-02-07 04:35:52+00:00 [COMMAND_EXIT_CODE="0"]
+User ID and Groups:
+uid=1001(salapati22) gid=1002(salapati22) groups=1002(salapati22),4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),118(netdev),119(lxd),1000(ubuntu),1001(google-sudoers)
+
+// My user ID (UID) is 1001, and I belong to multiple groups like adm, dialout, video, etc.
+
+Memory Information File in /proc/:
+iomem
+meminfo
+//meminfo contains detailed memory stats
+
+CPU Information File in /proc/:
+cpuinfo
+//info about server's CPU
+
+Memory Information:
+MemTotal:         976896 kB
+MemFree:          467140 kB
+MemAvailable:     634352 kB
+Buffers:           31392 kB
+Cached:           252748 kB
+// Memory details
+
+CPU Information: 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2200.146
+cache size	: 56320 KB
+physical id	: 0
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+// Only one processor core on this virtual machine
+
+Operating System Version:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.6 LTS"
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+// THis system runs Ubuntu 20.04.6 LTS
