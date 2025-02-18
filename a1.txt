@@ -1,0 +1,22 @@
+# Task 1a Output: Alias 'l' set for 'ls -ltr'
+# (No output for setting alias; just make sure to reload .bashrc or restart session)
+alias l='ls -ltr'
+
+# Task 1b Output: Alias 'w' set for 'ls -l | wc'
+# (No output for setting alias; just make sure to reload .bashrc or restart session)
+alias w='ls -l | wc'
+
+# Task 2c Output: Mean fare for 48.0-161.0
+Mean fare for 48.0-161.0: [calculated value]
+
+# Task 2c Output: Mean fare for 48.0-162.0
+Mean fare for 48.0-162.0: [calculated value]
+
+# Task 2d Output: Total fare for January 10, 2019
+Total fare for 2019-01-10: [calculated value]
+
+# Task 2e Output: 10 most popular dropoff locations with 3 or more passengers
+   [count] [dropoff_location_id]
+   ...
+   (Results from the top 10 most popular locations)
+
