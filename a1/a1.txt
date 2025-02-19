@@ -1,0 +1,27 @@
+1a: Alias 'l' set for 'ls-ltr'
+alias l = 'ls -ltr'
+
+1b. Alias 'w' set for 'ls -l | wc'
+alias w = 'ls -l | wc'
+
+2c. 
+Mean fare for 48.0-161.0: 12.54
+Mean fare for 79.0-132.0: 52.04
+
+2d. 
+Highest total amount paid on January 10, 2019:
+36090.3
+
+2e.
+Top 10 most popular dropoff locations for rides with 3 or more passengers:
+  19278 161.0
+  18775 230.0
+  18566 236.0
+  18545 237.0
+  16104 48.0
+  16051 162.0
+  15100 186.0
+  14417 132.0
+  14387 234.0
+  14352 142.0
+
