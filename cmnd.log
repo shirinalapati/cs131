@@ -1,0 +1,1059 @@
+    1  git
+    2  ls
+    3  cd cs131
+    4  ls
+    5  git status
+    6  git add README.md 
+    7  ls
+    8  git commit -m "first commit"
+    9  git push -u origin main
+   10  git status
+   11  ls
+   12  git add --all
+   13  git commit -m "add all files"
+   14  git push -u origin main
+   15  git push -u origin main --force
+   16  clear
+   17  ls
+   18  ls -a
+   19  rm -rf .git/
+   20  ls
+   21  ls -a
+   22  git init
+   23  git add README.md 
+   24  git commit -m "first commit"
+   25  git branch -M main
+   26  git remote add origin https://github.com/shirinalapati/cs131.git
+   27  git push -u origin main
+   28  gcloud compute project-info describe  --format="value(commonInstanceMetadata[items][ssh-keys])"
+   29  username:ssh-rsa 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
+   30  ls
+   31  cs cs131
+   32  ls
+   33  pwd
+   34  ls
+   35  mkdir sample1
+   36  ls
+   37  cd sample1/
+   38  mkdir sample2
+   39  touch a.txt
+   40  cd sample2/
+   41  touch a.txt
+   42  ls
+   43  pwd
+   44  cd ..
+   45  cd sample1/
+   46  cd /home/salapati22/cs131
+   47  touch ./b.txt
+   48  ls
+   49  cd ./sample1/sample2/
+   50  cd ~
+   51  ls
+   52  pwd
+   53  cs cs131/
+   54  cd cs131/
+   55  ls
+   56  rm b.txt
+   57  ls
+   58  file README.md
+   59  file sample1/
+   60  ls
+   61  cat README.md
+   62  less README.md
+   63  cat README.md
+   64  ls -lt
+   65  ls -ltr
+   66  ls -ltra
+   67  ls -ltrah
+   68  cat passwd
+   69  cs ..
+   70  cd ..
+   71  cd
+   72  ls
+   73  cd cs131/
+   74  ls
+   75  cd sample1/
+   76  ls
+   77  cp a.txt b.txt
+   78  ls
+   79  cp a.txt ./sample2/b.txt
+   80  cd sample2/
+   81  ls
+   82  rm b.txt
+   83  ls
+   84  cd ..
+   85  ls
+   86  rm sample2
+   87  rm -r sample2/
+   88  ls
+   89  mkdir sample2
+   90  rm  -r sample2/
+   91  ls
+   92  man rm
+   93  ls
+   94  touch aa.txt
+   95  aa123.txt
+   96  touch aa123.txt
+   97  ls
+   98  ls ?.txt
+   99  ls ??.txt
+  100  ls ?.txt
+  101  ls *.txt
+  102  ls [!a]*.txt
+  103  ls [!b]*.txt
+  104  vim aa.txt
+  105  ls
+  106  cat README.md
+  107  cd sample1/
+  108  ls
+  109  vim data.txt
+  110  cat data.txt
+  111  sort data.txt
+  112  cat data.txt
+  113  man uniq
+  114  uniq data.txt
+  115  sort data.txt | uniq
+  116  ls
+  117  ls > sorted_data.txt
+  118  cat sorted_data.txt
+  119  sort data.txt >> sorted_data.txt
+  120  cat sorted_data.txt
+  121  rm temp2 2>error.txt
+  122  cat error.txt
+  123  ls
+  124  mkdir temp2
+  125  touch sample.txt
+  126  cd ..
+  127  ls
+  128  rm temp2
+  129  rm temp2 2> error.txt
+  130  ls
+  131  cat error.txt
+  132  ls 1> sorted_data.txt
+  133  cat sorted_data.txt
+  134  ls > /dev/null
+  135  cat /dev/null
+  136  cat
+  137  cat
+  138  cat lazy_dog.txt
+  139  cat > lazy_dog.txt
+  140  vim data.txt
+  141  sort data.txt | uniq -c
+  142  man uniq
+  143  history
+  144  history | grep uniq
+  145  man grep
+  146  history | grep uniq > uniq_result.txt
+  147  cat uniq_result.txt
+  148  ls
+  149  sort data.txt | uniq -c
+  150  cat data.txt
+  151  wc data.txt
+  152  man wc
+  153  wc -l data.txt
+  154  head data.txt
+  155  vim data.txt
+  156  tail data.txt
+  157  head -3 data.txt
+  158  tail -3 data.txt
+  159  history | grep echo
+  160  echo "this is my readme"
+  161  echo "this is my readme" > README.md
+  162  git log
+  163  ls
+  164  git log -pretty-format: %h &ad %s' --graph
+  165  git log -pretty=format: '%h %ad %s' --graph
+  166  git log --pretty=format; '%h %ad %s' --graph
+  167  git log --pretty=format: '%h %ad %s' --graph
+  168  n/.gitconfig
+  169  git log --pretty=format: '%h %ad %s' --graph
+  170  alias
+  171  alias git log --pretty=format: '%h %ad %s' --grap
+  172  vim ~/.gitconfig
+  173  cd cs131
+  174  git hist
+  175  ls
+  176  vim README.md
+  177  git add README.md
+  178  git commit -m "edit README"
+  179  git hist
+  180  ls
+  181  vim README.md
+  182  cat README.md
+  183  git status
+  184  git add README.md
+  185  git commit - m "edit README"
+  186  git hist
+  187  git checkout main
+  188  cat README.md
+  189  git checkout 4df1dbfb
+  190  cat README.md
+  191  git checkout main
+  192  cat README.md
+  193  cat ~/.gitconfig
+  194  git checkout main
+  195  git status
+  196  git checkout main
+  197  vim README.md
+  198  cat README.md
+  199  git status
+  200  git checkout README.md
+  201  cat README.md
+  202  git status
+  203  git reset HEAD README.md
+  204  cat README.md
+  205  git status
+  206  mkdir -p ~/cs131/ws2
+  207  cd ~/cs131/ws2
+  208  echo $HOME
+  209  id
+  210  ls /proc/ | grep mem
+  211  head -5 /proc/meminfo
+  212  head -10 /proc/cpuinfo
+  213  tail -5 /proc/cpuinfo
+  214  cat /proc/cpuinfo
+  215  ls /etc/ | grep release
+  216  cat /etc/os-release
+  217  script -c "history" ws2.txt
+  218  history > cmds.log
+  219  vim cmds.log
+  220  sed -n -e '206,218p' cmds.log > cmds_filtered.log
+  221  vim cmds.log
+  222  mmkdir -p ~/cs131/ws2
+  223  mkdir -p ~/cs131/ws2
+  224  cd ~/cs131/ws2
+  225  echo $HOME
+  226  id
+  227  ls/proc/ | grep mem
+  228  ls /proc/ | grep mem
+  229  head -5 /proc/meminfo
+  230  head -10 /proc/cpuinfo
+  231  tail -5 /proc/cpuinfo
+  232  cat /proc/cpuinfo
+  233  script -c "history" ws2.txt
+  234  history >cmds.log
+  235  vim cmds.log
+  236  git add ws2.txt cmds.log
+  237  git commit -m "Completed WS2 Linux assignment"
+  238  git push
+  239  git status
+  240  vim README.md
+  241  git status
+  242  git add README.md
+  243  git commit -m "this is my commit on 2/10"
+  244  git hist
+  245  git reset --hard 5c985a2
+  246  git hist
+  247  man git log
+  248  git hist --all
+  249  git hist
+  250  git checkout -b 0210class
+  251  git status
+  252  ls
+  253  cat README.md
+  254  vim README.md
+  255  git add README.md
+  256  git commit -m "edit README"
+  257  git hist
+  258  ls
+  259  cd cs131
+  260  git add README.md
+  261  git commit -m "edit README"
+  262  git hist
+  263  git log
+  264  git checkout main
+  265  git status
+  266  cat README.md
+  267  git checkout 0210class
+  268  cat README.md
+  269  vim README.MD
+  270  git status
+  271  git merge main
+  272  git status
+  273  git hist
+  274  git hist --all
+  275  git checkout main
+  276  git log --all
+  277  git log
+  278  vim README.md
+  279  cat README.md
+  280  git add README.md
+  281  git commit -m "edit README(main)"
+  282  git log --all
+  283  cat ~/.gitconfig
+  284  git merge main
+  285  git checkout 0210class
+  286  git merge main
+  287  git log --all
+  288  cat README.md
+  289  vim README.md
+  290  cat README.md
+  291  git add README.md
+  292  git commit -m "edit README so it shows 0210 branch name"
+  293  git merge main
+  294  git checkout main
+  295  vim README.md
+  296  cat README.md
+  297  git add README.md
+  298  git dommit -m "edit README by removing the first line"
+  299  git checkout 0210class
+  300  git merge main
+  301  vim README.md
+  302  git add README.md
+  303  git commit -m "fix the conflict"
+  304  git merge main
+  305  cat README.md
+  306  vim README.md
+  307  git log
+  308  ls
+  309  cd sample1/
+  310  echo "show this text"
+  311  echo show this text
+  312  echo hi
+  313  echo *
+  314  echo "2 + 2 is $((2 + 2))"
+  315  echo "CS 13{1,2,3}"
+  316  echo CS 13(1,2,3)
+  317  echo CS 13{1,2,3}
+  318  echo CS 13{A,B,C}
+  319  echo $USER
+  320  echo USER
+  321  printenv
+  322  echo $SHELL
+  323  pwd
+  324  echo "$(pwd) has the following files: $(ls)"
+  325  ls
+  326  echo $(pwd) has the following files: $(ls)
+  327  cd cs131
+  328  sudo apt install python3-pip -y
+  329  pip install gown
+  330  pip install gdown
+  331  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  332  /home/<user-name>/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  333  pip install gdown
+  334  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  335  which gdown
+  336  find ~ -name gdown
+  337  export PATH=$HOME/.local/bin:$PATH
+  338  export /home/salapati22=$HOME/.local/bin:$PATH
+  339  /home/salapati22/.local/bin/gdown --version
+  340  /home/salapati22/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  341  export /home/salapati22/.local/bin/gdown=$HOME/.local/bin:$PATH
+  342  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  343  head -n 10 taxi_data.csv
+  344  ls
+  345  cat /etc/os-release
+  346  cat /etc/shadow
+  347  cd cs131/
+  348  ls
+  349  cs sample1/
+  350  cd sample1/
+  351  ls
+  352  touch sample.txt
+  353  ls -1
+  354  id
+  355  chmod 600 sample.txt
+  356  ls -1 | grep sample
+  357  vim sample.txt
+  358  u
+  359  passwd
+  360  su
+  361  sudo passwd
+  362  su
+  363  sudo /etc/shadow
+  364  su -l
+  365  su
+  366  sudo cat /etc/shadow
+  367  cd cs131/sample1/
+  368  cd cs131
+  369  ls
+  370  ls -l
+  371  man chown
+  372  sudo chown root
+  373  sudo chown root:
+  374  sudo chown root: sa
+  375  ls -l
+  376  ps
+  377  jobs
+  378  top
+  379  vim long.sh
+  380  cat long.sh
+  381  sh long.sh
+  382  sh long.sh >> result.txt
+  383  cat result.txt
+  384  sh long.sh >> result.txt
+  385  fg %1
+  386  jobs
+  387  bg %1
+  388  jobs
+  389  ls
+  390  fg %1
+  391  jobs
+  392  ps
+  393  cd cs131
+  394  echo "Home Directory Path:" > ws2.txt
+  395  echo -e "\nUser ID and Groups:" >> ws2.txt
+  396  id >> ws2.txt
+  397  echo -e "\nMemory Information File in /proc/:" >> ws2.txt
+  398  ls /proc/ | grep mem >> ws2.txt
+  399  echo -e "\nCPU Information File in /proc/:" >> ws2.txt
+  400  ls /proc/ | grep cpu >> ws2.txt
+  401  echo -e "\nMemory Information:" >> ws2.txt
+  402  head -5 /proc/meminfo >> ws2.txt
+  403  echo -e "\nCPU Information:" >> ws2.txt
+  404  head -10 /proc/cpuinfo >> ws2.txt
+  405  tail -5 /proc/cpuinfo >> ws2.txt
+  406  cat /proc/cpuinfo | grep "model name" | uniq >> ws2.txt
+  407  echo -e "\nOperating System Version:" >> ws2.txt
+  408  cat /etc/*release* >> ws2.txt
+  409  history > cmds.log
+  410  vim cmds.log
+  411  cat ws2.txt
+  412  vim ws2.txt
+  413  mv ws2.txt cmds.log ~/cs131/ws2/
+  414  cd ~/cs131
+  415  git add ws2/ws2.txt ws2/cmds.log
+  416  git commit -m "Updated ws2.txt and cmds.log with correct outputs"
+  417  git push
+  418  ls
+  419  cd cs131/
+  420  ls
+  421  cat long.sh
+  422  sh long.sh >> results.txt &
+  423  jobs
+  424  ls
+  425  cat results.txt
+  426  fg
+  427  jobs
+  428  bg %1
+  429  jobs
+  430  cd cs131/
+  431  cd background
+  432  cd background/
+  433  cat results.txt
+  434  sh long.sh >> results.txt &
+  435  echo $HOME
+  436  echo $SHELL
+  437  ls -a
+  438  less .bash-profile
+  439  cat.bashrc
+  440  cat. bashrc
+  441  cat.
+  442  vim .bashrc
+  443  .profile
+  444  .bashrc
+  445  vim.profile
+  446  vim .profile
+  447  vim .bashrc
+  448  head .bashrc
+  449  source ~/.bashrc
+  450  lll
+  451  source ~/.bashrc
+  452  lll
+  453  source ~/.bashrc
+  454  vim .bashrc
+  455  source ~/.bashrc
+  456  lll
+  457  vim .bashrc
+  458  source ~/.bashrc
+  459  lll
+  460  crontab -e
+  461  ls
+  462  cat hi.txt
+  463  crontab -e
+  464  cat hi.txt
+  465  nano sample
+  466  ls
+  467  nano sample
+  468  ls /var/spool/cron/
+  469  cd cs131/sample1/
+  470  cd cs131
+  471  vim sample2.txt
+  472  cat sample2.txt
+  473  cp sample2.txt sample3.txt
+  474  echo "hello" >> sampl3.txt
+  475  cat sample3.txt
+  476  echo "hello" >> sample3.txt
+  477  cat sample3.txt
+  478  man diff
+  479  diff -y sample2.txt sample3.txt
+  480  vim sample3.txt
+  481  diff -y sample2.txt sample3.txt
+  482  curl -o file.html https://www.google.com/
+  483  ls
+  484  less file.html
+  485  head -2 file.html
+  486  vim cmds.log
+  487  vim a1.txt
+  488  cd ~/cs131
+  489  git add a1 cmds.log a1.txt
+  490  git commit -m "Completed CS131 assignment with alias setup, taxi dataset analysis, and output files."
+  491  git push
+  492  salapati22
+  493  git push
+  494  git config -global user.name "Shirin"
+  495  y
+  496  git config --global user.name "Shirin"
+  497  $ git config --global user.name
+  498  >Shirin
+  499  git config user.name "Shirin"
+  500  git push
+  501  git config --list
+  502  $ git config user.name
+  503  # View the setting
+  504  whoami
+  505  git push
+  506  export PS1="\u@\h:\w (\$(git config user.name)) $ "
+  507  git config user.name "Shirin"
+  508  mnj
+  509  hi
+  510  cd cs131
+  511  git push
+  512  cd cs131
+  513  git push
+  514  git remote set-url origin https://github.com/salapati22/cs131.git
+  515  git remote -v
+  516  git push
+  517  git push origin a1_assignment
+  518  git push origin main
+  519  git push
+  520  cd cs131
+  521  git push origin main
+  522  git push origin main
+  523  git push
+  524  git remove -v
+  525  git remote -v
+  526  https://github.com/salapati22/cs131.git
+  527  git remote set-url origin https://github.com/shirinalapati/cs131.git
+  528  git push origin main
+  529  Shirin
+  530  git push origin main
+  531  git add a1 cmds.log a1.txt
+  532  git commit -m "Completed CS131 assignment with alias setup, taxi dataset analysis, and output files."
+  533  vim a1.txt
+  534  vim cmds.log
+  535  vim a1.txt
+  536  vim cmds.log
+  537  git add a1 cmds.log a1.txt
+  538  git commit -m "Completed CS131 assignment with alias setup, taxi dataset analysis, and output files."
+  539  git push origin main
+  540  git pull
+  541  git status
+  542  vim cmds.log
+  543  vim a1.txt
+  544  git add cmds.log
+  545  git add a1.txt
+  546  git commit -m "Resolved merge conflicts and kept local versions of cmds.log and a1.txt"
+  547  git push origin main
+  548  git remote -v
+  549  git push origin main
+  550  nano~/.bashrc
+  551  nano ~/.bashrc
+  552  source ~/.bashrc
+  553  l
+  554  nano ~/.bashrc
+  555  source ~/.bashrc
+  556  w
+  557  mkdir -p ~/cs131/a1/FARE
+  558  cd ~/cs131/a1/
+  559  grep "48.0,161.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  560  grep "34.0,212.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/34.0-212.0.txt
+  561  grep "48.0,161.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  562  find ~/ -name "2019-01-h1.csv"
+  563  mv /home/salapati22/cs131/2019-01-h1.csv /home/salapati22/cs131/a1/
+  564  cd /home/salapati22/cs131/a1
+  565  grep "2019-01-10" 2019-01-h1.csv | cut -d',' -f11 | paste -sd+ - | bc
+  566  grep "48.0,161.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  567  grep "34.0,212.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/34.0-212.0.txt
+  568  cut -d',' -f11 2019-01-h1.csv > FARE/48.0-161.0.txt
+  569  paste -sd+ FARE/48.0-161.0.txt | bc
+  570  wc -l < FARE/48.0-161.0.txt
+  571  sum=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  572  count=$(wc -l < FARE/48.0-161.0.txt)
+  573  mean=$(echo "scale=2; $sum / $count" | bc)
+  574  echo "Mean fare for 48.0-161.0: $mean"
+  575  echo "Mean fare for 48.0-161.0: $mean" >> a1.txt
+  576  grep ",79.0,132.0," 2019-01-h1.csv | cut -d',' -f11 > FARE/79.0-132.0.txt
+  577  sum=$(paste -sd+ FARE/79.0-132.0.txt | bc)
+  578  count=$(wc -l < FARE/79.0-132.0.txt)
+  579  mean=$(echo "scale=2; $sum / $count" | bc)
+  580  echo "Mean fare for 79.0-132.0: $mean" >> a1.txt
+  581  grep "2019-01-10" 2019-01-h1.csv | cut -d',' -f11 | paste -sd+ - | bc
+  582  mean=$(echo "scale=2; $sum / $count" | bc)
+  583  grep "2019-01-10" 2019-01-h1.csv | cut -d',' -f17 | sort -nr | head -1 > highest_total.txt
+  584  echo "Highest total amount paid on January 10, 2019:" >> a1.txt
+  585  cat highest_total.txt >> a1.txt
+  586  echo "" >> a1.txt
+  587  grep -E ',[3-9]+,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  588  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  589  cat top_dropoffs.txt >> a1.txt
+  590  echo "" >> a1.txt
+  591  history > cmds.log
+  592  cat a1.txt
+  593  grep -E ',[3-9]+,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  594  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  595  cat top_dropoffs.txt >> a1.txt
+  596  echo "" >> a1.txt
+  597  cat a1.txt
+  598  head -5 2019-01-h1.csv
+  599  grep -E ',[3-9]+,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  600  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  601  cat top_dropoffs.txt >> a1.txt
+  602  echo "" >> a1.txt
+  603  cat a1.txt
+  604  vim a1.txt
+  605  head -n 5 2019-01-h1.csv
+  606  grep -E '^[^,]*,[^,]*,[^,]*,[3-9][^,]*,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  607  cd
+  608  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  609  cat top_dropoffs.txt >> a1.txt
+  610  grep -E '^[^,]*,[^,]*,[^,]*,[3-9][^,]*,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  611  nano ~/.bashrc
+  612  cat a1.txt
+  613  source ~/.bashrc
+  614  nano ~/.bashrc
+  615  source ~/.bashrc
+  616  w
+  617  mkdir -p ~/cs131/a1/FARE
+  618  cd ~/cs131/a1/
+  619  grep "48.0,161.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  620  grep "34.0,212.0" 2019-01-h1.csv | cut -d',' -f11 > FARE/34.0-212.0.txt
+  621  cut -d',' -f11 2019-01-h1.csv > FARE/48.0-161.0.txt
+  622  paste -sd+ FARE/48.0-161.0.txt | bc
+  623  wc -l < FARE/48.0-161.0.txt
+  624  sum=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  625  count=$(wc -l < FARE/48.0-161.0.txt)
+  626  mean=$(echo "scale=2; $sum / $count" | bc)
+  627  echo "Mean fare for 48.0-161.0: $mean"
+  628  echo "Mean fare for 48.0-161.0: $mean" >> a1.txt
+  629  grep ",79.0,132.0," 2019-01-h1.csv | cut -d',' -f11 > FARE/79.0-132.0.txt
+  630  sum=$(paste -sd+ FARE/79.0-132.0.txt | bc)
+  631  count=$(wc -l < FARE/79.0-132.0.txt)
+  632  mean=$(echo "scale=2; $sum / $count" | bc)
+  633  echo "Mean fare for 79.0-132.0: $mean" >> a1.txt
+  634  grep "2019-01-10" 2019-01-h1.csv | cut -d',' -f17 | sort -nr | head -1 > highest_total.txt
+  635  echo "Highest total amount paid on January 10, 2019:" >> a1.txt
+  636  cat highest_total.txt >> a1.txt
+  637  echo "" >> a1.txt
+  638  grep -E ',[3-9]+,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  639  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  640  cat top_dropoffs.txt >> a1.txt
+  641  echo "" >> a1.txt
+  642  cat a1.txt
+  643  head -n 5 2019-01-h1.csv
+  644  grep -E '^[^,]*,[^,]*,[^,]*,[3-9][^,]*,' 2019-01-h1.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -10 > top_dropoffs.txt
+  645  echo "Top 10 most popular dropoff locations for rides with 3 or more passengers:" >> a1.txt
+  646  cat top_dropoffs.txt >> a1.txt
+  647  echo "" >> a1.txt
+  648  cat a1.txt
+  649  vim a1.txt
+  650  history > cmds.log
+  651  vim cmds.log
+  652  vim a1.txt
+  653  vim cmds.log
+  654  git status
+  655  git add a1.txt
+  656  git add cmds.log
+  657  git commit -m "modified data"
+  658  git push -u  origin main
+  659  git status
+  660  git push
+  661  ls
+  662  cd sample1/
+  663  cd cs131/
+  664  cd cs131
+  665  vim first.sh
+  666  cat first.sh
+  667  sh first.sh
+  668  ls -l | grep first
+  669  ./first.sh
+  670  chmod 755 first.sh
+  671  first.sh
+  672  ./first.sh
+  673  ls
+  674  logout
+  675  ls
+  676  cd cs131/
+  677  ls
+  678  cd sample1/
+  679  mkdir sample1
+  680  cd sample1/
+  681  ls
+  682  vim first.sh
+  683  ls
+  684  clear
+  685  echo $PATH
+  686  cd
+  687  mkdir bin
+  688  ls
+  689  mv cs131/sample1/fi
+  690  mv cs131/sample1/first.sh ./bin
+  691  ls bin/
+  692  export PATH=~/bin:"$PATH"
+  693  first.sh
+  694  vim first.sh
+  695  first s.h
+  696  first.sh
+  697  ls first.sh
+  698  ls
+  699  cd bi
+  700  cd bin/
+  701  ls -l
+  702  chmod 755
+  703  755 chmod
+  704  chmod 755 first.sh
+  705  first.sh
+  706  cp bin/first/sh ./
+  707  cd
+  708  cp bin/first/sh ./
+  709  echo $PATH
+  710  cp bin/first.sh ./
+  711  ./first.sh
+  712  rm first.sh
+  713  ls
+  714  first .sh
+  715  cd cs131/sample1
+  716  clear
+  717  ls
+  718  vim sample
+  719  cat sample
+  720  chmod 755 sample
+  721  ./sample
+  722  vim sample
+  723  cat sample
+  724  chmod 755 sample
+  725  ./sample
+  726  ./sample > sample.h
+  727  cat sample.html
+  728  /,sample >sample.html
+  729  cat sample.html
+  730  vim saple
+  731  ./sample
+  732  vim sample
+  733  cat sample
+  734  cd cs131
+  735  vim reorg.sh
+  736  chmod +x reorg.sh
+  737  ./reorg.sh
+  738  pwd
+  739  ls -l
+  740  ls -l | grep "2019-01-h1"
+  741  realpath 2019-01-h1.csv
+  742  cd /home/salapati22/cs131/
+  743  ls -l 2019-01-h1.csv
+  744  ls -l /home/salapati22/cs131/
+  745  find / -name "2019-01-h1.csv" 2>/dev/null
+  746  mv /home/salapati22/2019-01-h1.csv /home/salapati22/cs131/
+  747  cd /home/salapati22/cs131/
+  748  ls -l 2019-01-h1.csv
+  749  ls -l /home/salapati22/cs131/2019-01-h1.csv
+  750  vim reorg.sh
+  751  chmod +x reorg.sh
+  752  ./reorg.sh
+  753  vim ws4.txt
+  754  head -5 /home/salapati22/cs131/a1/2019-01-h1.csv
+  755  vim reorg.sh
+  756  bash reorg.sh
+  757  ls -l
+  758  wc -l *csv
+  759  head -10 /home/salapati22/cs131/a1/2019-01-h1.csv
+  760  grep "^1.0," /home/salapati22/cs131/a1/2019-01-h1.csv
+  761  head -n 100 /home/salapati22/cs131/a1/2019-01-h1.csv | grep "^1.0,"
+  762  grep "^$vendor," "$data_file" > "${timestamp}-${vendor}.csv"
+  763  vim reorg.sh
+  764  cd cs131
+  765  vim reorg.sh
+  766  >reorg.sh
+  767  vim reorg.sh
+  768  chmod +x reorg.sh
+  769  ./reorg.sh
+  770  vim ws4.txt
+  771  vim reorg.sh
+  772  git add reorg.sh ws4.txt .gitignore
+  773  git commit -m "Add reorg.sh, ws4.txt, and .gitignore files"
+  774  git push origin main
+  775  shirinalapati
+  776  git push origin main
+  777  git pull origin main
+  778  git push origin main
+  779  cat /etc/passwd
+  780  awk –F : ‘/root/ { print $5 }’ /etc/passwd
+  781  head -2 /etc/passwd
+  782  awk -F : '/root/ {print $5} ' /etc/passwd
+  783  awk -F: '/root/ {print $0}' /etc/passwd
+  784  vim reorg.sh
+  785  vim awkscrfile
+  786  awk -F: -fawkscrfile /etc/passwd
+  787  clear
+  788  awk 'BEGIN{print "this is the starts of awk processing"} //' etc/passwd
+  789  awk 'BEGIN{print "this is the starts of awk processing"} //' /etc/passwd
+  790  clear
+  791  awk 'BEGIN{print "this is the start of awk processing"} /root/' /etc/passwd
+  792  awk 'BEGIN{print "this is the start of awk processing"} /root/ {print} END {print "this is the end"}' /etc/passwd
+  793  awk 'BEGIN {lc=0} // {lc++} END {print lc}' data_file
+  794  awk 'BEGIN {i=1} i<4 {print; i++}' data_file
+  795  awk 'BEGIN {i=4} i<4 {print; i++}' /etc/passwd
+  796  awk 'BEGIN {i=1} i<4 {print: i++}' /etc/passwd
+  797  head -4 /etc/passwd
+  798  awk 'BEGIN {} /bash/ {print $7} ' /etc/passwd
+  799  head -2 /etc/passwd
+  800  clear
+  801  awk 'BEGIN {OFS = ", "} /bash/ {print $0}' /etc/passwd
+  802  awk 'BEGIN {FS=":
+  803  awk -f counterbash /etc/passwd
+  804  vim autosnap.sh
+  805  vim autoshop.sh
+  806  vim autosnap.sh
+  807  chmod +x autosnap
+  808  vim autosnap.sh
+  809  chmod +x autosnap
+  810  vim autosnap.sh
+  811  cd ~/cs131
+  812  vim autosnap.sh
+  813  chmod +x autosnap
+  814  ls -l
+  815  chmod +x autosnap.sh
+  816  export PATH=$PWD:$PATH
+  817  sudo apt install scrot
+  818  ./autosnap
+  819  ls -l ~/Pictures/
+  820  bash autosnap
+  821  chmod +x autosnap
+  822  scrot ~/Pictures/test_screenshot.png
+  823  ok
+  824  mv autosnap ~/bin/
+  825  export PATH=$HOME/bin:$PATH
+  826  autosnap
+  827  ./autosnap
+  828  ls -l
+  829  mv autosnap.sh autosnap
+  830  pwd
+  831  chmod +x autosnap
+  832  ./autosnap
+  833  systemhealth
+  834  top
+  835  clear
+  836  rsync --version
+  837  vim syncnotes
+  838  mkdir -p ~/cs131/a2
+  839  mv syncnotes ~/cs131/a2/
+  840  nano ~/cs131/a2/README.md
+  841  cd ~/cs131
+  842  git init
+  843  git add a2/
+  844  git commit -m "Add syncnotes script and README"
+  845  git remote add origin https://github.com/your-username/cs131-projects.git
+  846  git push -u origin master
+  847  git push -u origin main
+  848  syncnotes
+  849  chmod +x ~/cs131/a2/syncnotes
+  850  ls -l ~/cs131/a2/syncnotes
+  851  mkdir -p ~/Notes ~/GoogleDrive/Notes
+  852  ~/cs131/a2/syncnotes
+  853  ls ~/GoogleDrive/Notes/
+  854  cd ~/cs131
+  855  cd a2
+  856  ./remindme.sh "Hi" 10:44
+  857  cd~/cs131
+  858  ~cd/cs131
+  859  cd ~/cs131
+  860  cd a2
+  861  ./remindme.sh "Eat breakfast" 10:42
+  862  cd ~/cs131
+  863  cd a2
+  864  cd cs131
+  865  sed -n '/,2\.0,/p' 2019-1-h1.csv > vendor2.csv
+  866  sed -n '/,2\.0,/p' 2019-01-h1.csv > vendor2.csv
+  867  wc vendor2.csv >> ws56.txt
+  868  cd cs131
+  869  sed -n '/,2\.0,/p' 2019-01-h1.csv > vendor2.csv
+  870  vim ws56.txt
+  871  sed 's/[:\"-]//g' 2019-01-h1.csv > no-separators.cs
+  872  head -10 no-separators.csv >> ws56.txt
+  873  ls -l no-separators.csv
+  874  sed 's/[:\"-]//g' 2019-01-h1.csv > no-separators.csv
+  875  ls -l no-separators.csv
+  876  head -10 no-separators.csv >> ws56.txt
+  877  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+  878  cd cs131
+  879  git status
+  880  git push
+  881  ls -lh no-separators.csv.gz
+  882  xz -z no-separators.csv.gz
+  883  git lfs track "*.csv.gz.xz"
+  884  git add .gitattributes no-separators.csv.gz.xz
+  885  git commit -m "Compress and track no-separators.csv.gz.xz with Git LFS"
+  886  git status
+  887  git add no-separators.csv.gz 
+  888  git commit -m "Hi"
+  889  git push origin main
+  890  split -b 50M no-separators.csv.gz "no-separators_part_"
+  891  git lfs install
+  892  cd ~/cs131
+  893  split -b 50M no-separators.csv.gz no-separators_part_
+  894  split -b 50M no-separators.csv no_separators_part_
+  895  ls -lh no-separators_part_*
+  896  ls -lh no-separators_part
+  897  ls -lh no-separators.csv
+  898  split -b 50M no-separators.csv no-separators_part_
+  899  ls -lh no-separators_part_*
+  900  ls -lh
+  901  git lfs track "no-separators_part_*"
+  902  cat .gitattributes
+  903  git add .gitattributes
+  904  git add no-separators_part_*
+  905  git commit -m "Track split files with Git LFS"
+  906  git add no_separators_part_*
+  907  git commit -m "Track split files with Git LFS"
+  908  git push origin main
+  909  git add no_separators_part_aa no_separators_part_ab no_separators_part_ac
+  910  git commit -m "Track first batch of split files with Git LFS"
+  911  git push origin main
+  912  git config http.postBuffer 524288000
+  913  git lfs push origin main
+  914  git push origin main
+  915  git config http.postBuffer 524288000
+  916  git push origin main
+  917  wc vendor2.csv
+  918  head -10 no-separators.csv
+  919  vim ws56.txt
+  920  awk -F, '$4 >= 10.0 {print $5}' 2019-1-h1.csv | sort | uniq -c | sort -n > ws56.txt
+  921  awk -F, '$4 >= 10.0 {print $5}' 2019-01-h1.csv | sort | uniq -c | sort -n > ws56.txt
+  922  awk -F, '{print $5}' 2019-01-h1.csv | sort | uniq -c | sort -nr | head -20 >> ws56.txt
+  923  vim ws56.txt
+  924  git add cmnd.log ws56.txt
+  925  vim cmnd.log
+  926  head -10 no-fractions.csv
+  927  history > cmnd.log
+  928  history >> cmnd.log
+  929  git add cmnd.log ws56.txt
+  930  git commit -m "Completed Task 1 and Task 2"
+  931  git push origin main
+  932  git lfs untrack "no-separators.csv"
+  933  git lfs untrack "no-fractions.csv"
+  934  git reset no-separators.csv
+  935  git reset no-fractions.csv
+  936  git add head_no-separators.csv head_no-fractions.csv ws56.txt cmnd.log
+  937  git commit -m "Track only necessary output files"
+  938  git add head_no-separators.csv head_no-fractions.csv ws56.txt cmnd.log
+  939  git commit -m "Track only necessary output files"
+  940  ls
+  941  git add no-separators_part_aa no-separators_part_ab no-separators_part_ac ws56.txt cmnd.log
+  942  git commit -m "Track only necessary output files"
+  943  git add .gitattributes
+  944  git commit -m "Track only necessary output files"
+  945  git push origin main
+  946  wc vendo2.csv
+  947  wc vendor2.csv
+  948  sed -n '/Vendor 2.0/p' 2019-01-h1.csv > vendortwo.csv
+  949  wc vendortwo.csv
+  950  sed -n '/Vendor 2.0/p' 2019-01-h1.csv > vendortwotwo.csv
+  951  wc vendortwotwo.csv
+  952  sed 's/[:"-]//g' 2019-01-h1.csv > zero-separators.csv
+  953  head -10 zero-separators.csv
+  954  sed 's/\.[0-9]*//g' zero-separators.csv > zero-fractions.csv
+  955  head -10 zero-fractions.csv
+  956  history > cmnd.log
+  957  awk -F, '$3 >= 10 {print $4}' 2019-01-h1.csv | sort | uniq -c | awk '{print $2, $1}' > ws57.txt
+  958  awk -F, '{print $4}' 2019-01-h1.csv | sort | uniq -c | sort -nr | head -20 > ws57.txt
+  959  history > cmnd.log
+ 1147  git lfs ls-files
+ 1148  git push origin main
+ 1149  git config --global pack.windowMemory 256m
+ 1150  git config --global pack.packSizeLimit 256m
+ 1151  git config --global pack.threads 1
+ 1152  free -h
+ 1153  sudo sync && sudo sysctl -w vm.drop_caches=3
+ 1154  free -h
+ 1155  sudo fallocate -l 1G /swapfile  # Create a 1GB swap file
+ 1156  sudo chmod 600 /swapfile        # Set correct permissions
+ 1157  sudo mkswap /swapfile           # Format it as swap
+ 1158  sudo swapon /swapfile           # Enable the swap file
+ 1159  free -h
+ 1160  git push origin main
+ 1161  free -h
+ 1162  cd cs131
+ 1163  echo "terry" > jayden
+ 1164  vim jayden.txt
+ 1165  vim jayden
+ 1166  git add jayden
+ 1167  git commit -m "Add jayden file with text 'terry'"
+ 1168  git push origin main
+ 1169  git status
+ 1170  vim jayden.txt
+ 1171  git add jayden.txt
+ 1172  git commit -m "Add jayden.txt file with text 'terry'"
+ 1173  git push origin main
+ 1174  cd cs131
+ 1175  git status
+ 1176  git add mason.txt
+ 1177  git commit -m "Add mason.txt with the word lawrence"
+ 1178  git push origin main
+ 1179  free -h
+ 1180  git status
+ 1181  cd cs131
+ 1182  git status
+ 1183  echo "john" > jason.txt
+ 1184  git add jason.txt
+ 1185  git commit -m "Add mason.txt with the word lawrence"
+ 1186  git push origin main
+ 1187  cd cs131
+ 1188  vim hi.log
+ 1189  vim cmnd.log
+ 1190  sed -n '/,2,/p' 2019-01-h1.csv > vendordos.csv
+ 1191  wc vendordos.csv >> ws58.txt
+ 1192  sed 's/[:\"-]//g' 2019-01-h1.csv > none-separators.csv
+ 1193  head -10 none-separators.csv >> ws58.txt
+ 1194  sed 's/\.[0-9]*//g' none-separators.csv > none-fractions.csv
+ 1195  head -10 none-fractions.csv >> ws58.txt
+ 1196  history | tail -n 50 >> cmnd.log
+ 1150  git config --global pack.packSizeLimit 256m
+ 1151  git config --global pack.threads 1
+ 1152  free -h
+ 1153  sudo sync && sudo sysctl -w vm.drop_caches=3
+ 1154  free -h
+ 1155  sudo fallocate -l 1G /swapfile  # Create a 1GB swap file
+ 1156  sudo chmod 600 /swapfile        # Set correct permissions
+ 1157  sudo mkswap /swapfile           # Format it as swap
+ 1158  sudo swapon /swapfile           # Enable the swap file
+ 1159  free -h
+ 1160  git push origin main
+ 1161  free -h
+ 1162  cd cs131
+ 1163  echo "terry" > jayden
+ 1164  vim jayden.txt
+ 1165  vim jayden
+ 1166  git add jayden
+ 1167  git commit -m "Add jayden file with text 'terry'"
+ 1168  git push origin main
+ 1169  git status
+ 1170  vim jayden.txt
+ 1171  git add jayden.txt
+ 1172  git commit -m "Add jayden.txt file with text 'terry'"
+ 1173  git push origin main
+ 1174  cd cs131
+ 1175  git status
+ 1176  git add mason.txt
+ 1177  git commit -m "Add mason.txt with the word lawrence"
+ 1178  git push origin main
+ 1179  free -h
+ 1180  git status
+ 1181  cd cs131
+ 1182  git status
+ 1183  echo "john" > jason.txt
+ 1184  git add jason.txt
+ 1185  git commit -m "Add mason.txt with the word lawrence"
+ 1186  git push origin main
+ 1187  cd cs131
+ 1188  vim hi.log
+ 1189  vim cmnd.log
+ 1190  sed -n '/,2,/p' 2019-01-h1.csv > vendordos.csv
+ 1191  wc vendordos.csv >> ws58.txt
+ 1192  sed 's/[:\"-]//g' 2019-01-h1.csv > none-separators.csv
+ 1193  head -10 none-separators.csv >> ws58.txt
+ 1194  sed 's/\.[0-9]*//g' none-separators.csv > none-fractions.csv
+ 1195  head -10 none-fractions.csv >> ws58.txt
+ 1196  history | tail -n 50 >> cmnd.log
+ 1197  awk -F, '$total>=10 {tips[$tip]++} END {for (t in tips) print t, tips[t]}' total=10 tip=12 2019-01-h1.csv | sort -n > ws58.txt
+ 1198  awk -F, '{tips[$12]++} END {for (t in tips) print t, tips[t]}' 2019-01-h1.csv | sort -k2 -nr | head -20 >> ws58.txt
+ 1199  history | tail -n 50 >> cmnd.log
