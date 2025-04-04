@@ -1,3 +1,4 @@
+ HEAD
     1  git
     2  ls
     3  cd cs131
@@ -1057,3 +1058,20 @@
  1197  awk -F, '$total>=10 {tips[$tip]++} END {for (t in tips) print t, tips[t]}' total=10 tip=12 2019-01-h1.csv | sort -n > ws58.txt
  1198  awk -F, '{tips[$12]++} END {for (t in tips) print t, tips[t]}' 2019-01-h1.csv | sort -k2 -nr | head -20 >> ws58.txt
  1199  history | tail -n 50 >> cmnd.log
+
+   sed -n '/,2,/p' 2019-01-h1.csv > vendor2.csv
+   wc vendor2.csv >> ws56.txt
+   sed 's/[:\"-]//g' 2019-01-h1.csv > none-separators.csv
+   head -10 none-separators.csv >> ws56.txt
+   sed 's/\.[0-9]*//g' none-separators.csv > none-fractions.csv
+   head -10 none-fractions.csv >> ws56.txt
+   history | tail -n 50 >> cmnd.log
+   awk -F, '$total>=10 {tips[$tip]++} END {for (t in tips) print t, tips[t]}' total=10 tip=12 2019-01-h1.csv | sort -n > ws56.txt
+   awk -F, '{tips[$12]++} END {for (t in tips) print t, tips[t]}' 2019-01-h1.csv | sort -k2 -nr | head -20 >> ws56.txt
+   history | tail -n 50 >> cmnd.log
+   git add ws56.txt
+   git commit -m "Adding ws56.txt"
+   git push origin main
+   git add cmnd.log
+   git commit -m "Adding command history"
+   git push origin main ca6288cbb8c4048fd6d1e79c43550b32b7f1ff5f
