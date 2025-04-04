@@ -1,10 +1,5 @@
 Student Summary:
 
-Name: 
-TotalScore: 0
-Average Score: -0.00
-Status: Fail
-
 Name: David
 TotalScore: 195
 Average Score: 65.00
@@ -31,4 +26,4 @@ Average Score: 84.33
 Status: Pass
 
 The top scoring student was : Charlie with 270 points
-The lowest scoring student was :  with 0 points
+The lowest scoring student was : David with 195 points
