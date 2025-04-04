@@ -8,4 +8,8 @@ vim grader.awk
 awk -f grader.awk grades.csv > a3.txt
 
 cat a3.txt
-
+git init
+git add .
+git commit -m "Assignment 3 finished"
+git remote add origin https://github.com/shirinalapati/a3.git
+git push -u origin main
