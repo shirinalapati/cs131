@@ -1,9 +1,9 @@
 Student Summary:
 
 Name: David
-TotalScore: 195
-Average Score: 65.00
-Status: Fail
+TotalScore: 195 # Sum of grades across all 3 subjects of CS146,CS131,CS100W
+Average Score: 65.00 # Average of the total scores for each student
+Status: Fail # If score below 70, will be marked as fail, while anything above 70 is pass
 
 Name: Eve
 TotalScore: 265
