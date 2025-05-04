@@ -1,1 +1,60 @@
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("NYC Taxi MLlib").getOrCreate()
 
+df = spark.read.csv("work/2019-01-h1.csv", header=True, inferSchema=True)
+df = df.select("passenger_count", "PULocationID", "DOLocationID", "total_amount")
+df.show(10)
+
++---------------+------------+------------+------------+
+|passenger_count|PULocationID|DOLocationID|total_amount|
++---------------+------------+------------+------------+
+|            1.0|       151.0|       239.0|        9.95|
+|            1.0|       239.0|       246.0|        16.3|
+|            3.0|       236.0|       236.0|         5.8|
+|            5.0|       193.0|       193.0|        7.55|
+|            5.0|       193.0|       193.0|       55.55|
+|            5.0|       193.0|       193.0|       13.31|
+|            5.0|       193.0|       193.0|       55.55|
+|            1.0|       163.0|       229.0|        9.05|
+|            1.0|       229.0|         7.0|        18.5|
+|            2.0|       141.0|       234.0|        13.0|
++---------------+------------+------------+------------+
+only showing top 10 rows
+
+trainDF, testDF = df.randomSplit([0.8, 0.2], seed=42)
+
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.regression import DecisionTreeRegressor
+from pyspark.ml import Pipeline
+
+vec = VectorAssembler(inputCols=["passenger_count", "PULocationID", "DOLocationID"], outputCol="features")
+tree = DecisionTreeRegressor(featuresCol="features", labelCol="total_amount").setMaxBins(100)
+pipeline = Pipeline(stages=[vec, tree])
+
+model = pipeline.fit(trainDF)
+
+predictions = model.transform(testDF)
+predictions.select("passenger_count", "PULocationID", "DOLocationID", "prediction").show(10)
+
++---------------+------------+------------+------------------+
+|passenger_count|PULocationID|DOLocationID|        prediction|
++---------------+------------+------------+------------------+
+|            0.0|         4.0|         4.0|22.392638439331442|
+|            0.0|         4.0|        79.0|18.706151114079706|
+|            0.0|         4.0|        90.0|18.706151114079706|
+|            0.0|         4.0|       170.0|18.706151114079706|
+|            0.0|         7.0|         7.0|22.392638439331442|
+|            0.0|         7.0|       138.0|18.706151114079706|
+|            0.0|         7.0|       179.0|18.706151114079706|
+|            0.0|        10.0|       234.0|18.706151114079706|
+|            0.0|        13.0|        66.0|18.706151114079706|
+|            0.0|        13.0|        68.0|18.706151114079706|
++---------------+------------+------------+------------------+
+only showing top 10 rows
+
+from pyspark.ml.evaluation import RegressionEvaluator
+evaluator = RegressionEvaluator(labelCol="total_amount", predictionCol="prediction", metricName="rmse")
+rmse = evaluator.evaluate(predictions)
+print(f"Root Mean Squared Error (RMSE): {rmse}")
+
+Root Mean Squared Error (RMSE): 79.94758831176385
