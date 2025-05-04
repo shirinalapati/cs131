@@ -19,7 +19,7 @@ df.show(10)
 |            1.0|       229.0|         7.0|        18.5|
 |            2.0|       141.0|       234.0|        13.0|
 +---------------+------------+------------+------------+
-only showing top 10 rows
+first 10 entries
 
 trainDF, testDF = df.randomSplit([0.8, 0.2], seed=42)
 
@@ -50,7 +50,7 @@ predictions.select("passenger_count", "PULocationID", "DOLocationID", "predictio
 |            0.0|        13.0|        66.0|18.706151114079706|
 |            0.0|        13.0|        68.0|18.706151114079706|
 +---------------+------------+------------+------------------+
-only showing top 10 rows
+first 10 predicted results
 
 from pyspark.ml.evaluation import RegressionEvaluator
 evaluator = RegressionEvaluator(labelCol="total_amount", predictionCol="prediction", metricName="rmse")
